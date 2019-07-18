@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginLeft="@dimen/px_30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/map_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color_black_v1"
+                android:text="肯德基" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:visibility="gone"
+                android:background="@drawable/map_icon_close"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/map_item_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_10"
+                android:background="@drawable/home_shape"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:text="4.8"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/map_ex_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/map_ex_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/map_ex_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/map_ex_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/map_ex_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@drawable/icon_star_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/map_item_score_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginTop="@dimen/px_10"
+
+                android:text="@string/home_item_fen" />
+
+            <TextView
+                android:id="@+id/map_item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_50"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="0.5km" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_icon_tag" />
+
+            <TextView
+                android:id="@+id/map_item_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:visibility="invisible"
+                android:background="@drawable/home_icon_minspend" />
+
+            <TextView
+                android:id="@+id/map_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:visibility="invisible"
+                android:text="@string/home_item_mon" />
+
+            <TextView
+                android:id="@+id/map_closing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_40"
+                android:textColor="@color/nh_percent"
+                android:text="@string/soon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_shape"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/px_15"
+                android:textColor="@color/title"
+                android:layout_marginLeft="@dimen/px_100"
+                android:layout_marginRight="@dimen/px_100"
+                android:text="@string/go_there"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

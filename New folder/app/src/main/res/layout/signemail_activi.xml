@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_back"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_80"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginRight="@dimen/px_50"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/please_em"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            >
+            <com.app.whoot.ui.view.custom.ClearEditText
+                android:id="@+id/semail_em"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/px_60"
+                android:hint="@string/prompt_email"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            >
+            <com.app.whoot.ui.view.custom.ClearEditText
+                android:id="@+id/semail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/px_60"
+                android:hint="@string/name"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/px_30">
+                <com.app.whoot.ui.view.custom.ClearEditText
+                    android:id="@+id/semail_pas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:inputType="textVisiblePassword"
+                    android:hint="@string/password"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <ImageView
+                android:id="@+id/semail_pas_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_30"
+                android:layout_marginLeft="@dimen/px_10"
+                android:background="@drawable/login_icon_hide"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/px_30"
+            android:background="@color/item" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/px_30">
+                <com.app.whoot.ui.view.custom.ClearEditText
+                    android:id="@+id/semail_pasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:hint="@string/confirm"
+                    android:inputType="textVisiblePassword"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <ImageView
+                android:id="@+id/semail_pasword_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_30"
+                android:layout_marginLeft="@dimen/px_10"
+                android:background="@drawable/login_icon_hide"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/px_30"
+            android:background="@color/item" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/px_30">
+                <com.app.whoot.ui.view.custom.ClearEditText
+                    android:id="@+id/semail_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/invite_tex"
+                    android:inputType="textVisiblePassword"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/px_30"
+            android:background="@color/item" />
+
+
+
+        <TextView
+            android:id="@+id/semail_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_50"
+            android:text=""
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/semail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign"
+                android:gravity="center"
+                android:paddingTop="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_100"
+                android:layout_marginBottom="@dimen/px_20"
+
+                android:paddingBottom="@dimen/px_25"
+                android:textColor="@color/white"
+                android:background="@drawable/login_btn_one"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

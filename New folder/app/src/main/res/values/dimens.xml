@@ -1,0 +1,133 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32px</dimen>
+    <dimen name="activity_vertical_margin">32px</dimen>
+
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <!--针对文字大小设置-->
+    <dimen name="sp_20">@dimen/px_20</dimen>
+    <dimen name="sp_22">@dimen/px_22</dimen>
+    <dimen name="sp_24">@dimen/px_24</dimen>
+    <dimen name="sp_26">@dimen/px_26</dimen>
+    <dimen name="sp_28">@dimen/px_28</dimen>
+    <dimen name="sp_30">@dimen/px_30</dimen>
+    <dimen name="sp_32">@dimen/px_32</dimen>
+    <dimen name="sp_36">@dimen/px_36</dimen>
+    <dimen name="sp_40">@dimen/px_40</dimen>
+
+    <dimen name="default_divider_height">0.3dp</dimen>
+    <dimen name="fengexian">20dp</dimen>
+    <dimen name="default_divider_padding">4dp</dimen>
+    <!--主页底部tab字体大小-->
+    <dimen name="home_footer_item_text_size">10dp</dimen>
+    <!--主页底部tab高度-->
+    <dimen name="home_footer_height">65dp</dimen>
+    <!--标题栏高度-->
+    <dimen name="main_navagator_height">45dp</dimen>
+
+    <dimen name="big_text">16dp</dimen>
+    <dimen name="middle_text">14dp</dimen>
+    <dimen name="small_text">12dp</dimen>
+
+    <dimen name="left_padding">10dp</dimen>
+    <dimen name="right_padding">10dp</dimen>
+    <!--选项卡高度-->
+    <dimen name="nyh_tablayout_height">52dp</dimen>
+    <!--设置我的等item的高度-->
+    <dimen name="setting_item_height">42dp</dimen>
+    <!--登录页面的输入框高-->
+    <dimen name="login_edit_height">45dp</dimen>
+    <!--登录页面按钮高度-->
+    <dimen name="login_btn_height">45dp</dimen>
+    <!--验证身份输入框高度-->
+    <dimen name="verfication_edit_height">45dp</dimen>
+    <!--一些界面底部有空白，统一高度在此-->
+    <dimen name="margin_bottom">60dp</dimen>
+    <!--取现界面输入框高-->
+    <dimen name="withdrawals_edit_height">36dp</dimen>
+    <!--充值界面的三个item高度-->
+    <dimen name="recharge_item_height">80dp</dimen>
+    <!--使用红包按钮高度-->
+    <dimen name="red_packet_btn_height">40dp</dimen>
+    <!--因为不同的手机分辨率，会导致热卖无法贴边-->
+    <dimen name="hot_card_margin">2.5dp</dimen>
+
+
+    <dimen name="px_2">2px</dimen>
+    <dimen name="px_4">4px</dimen>
+    <dimen name="px_6">6px</dimen>
+    <dimen name="px_10">10px</dimen>
+    <dimen name="px_12">12px</dimen>
+    <dimen name="px_13">13px</dimen>
+    <dimen name="px_14">14px</dimen>
+    <dimen name="px_15">15px</dimen>
+    <dimen name="px_8">8px</dimen>
+    <dimen name="px_18">18px</dimen>
+    <dimen name="px_22">22px</dimen>
+    <dimen name="px_24">24px</dimen>
+    <dimen name="px_34">34px</dimen>
+    <dimen name="px_36">36px</dimen>
+    <dimen name="px_38">38px</dimen>
+    <dimen name="px_42">42px</dimen>
+    <dimen name="px_44">44px</dimen>
+    <dimen name="px_46">46px</dimen>
+    <dimen name="px_48">48px</dimen>
+    <dimen name="px_20">20px</dimen>
+    <dimen name="px_25">25px</dimen>
+    <dimen name="px_26">26px</dimen>
+    <dimen name="px_27">27px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_30">30px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_40">40px</dimen>
+    <dimen name="px_45">45px</dimen>
+    <dimen name="px_50">50px</dimen>
+    <dimen name="px_60">60px</dimen>
+    <dimen name="px_64">64px</dimen>
+    <dimen name="px_70">70px</dimen>
+    <dimen name="px_74">74px</dimen>
+    <dimen name="px_80">80px</dimen>
+    <dimen name="px_84">84px</dimen>
+    <dimen name="px_90">90px</dimen>
+    <dimen name="px_98">98px</dimen>
+    <dimen name="px_94">94px</dimen>
+    <dimen name="px_96">96px</dimen>
+    <dimen name="px_100">100px</dimen>
+    <dimen name="px_120">120px</dimen>
+    <dimen name="px_125">125px</dimen>
+    <dimen name="px_140">140px</dimen>
+    <dimen name="px_150">150px</dimen>
+    <dimen name="px_160">160px</dimen>
+    <dimen name="px_166">166px</dimen>
+    <dimen name="px_176">176px</dimen>
+    <dimen name="px_180">180px</dimen>
+    <dimen name="px_182">182px</dimen>
+    <dimen name="px_186">183px</dimen>
+    <dimen name="px_200">200px</dimen>
+    <dimen name="px_220">220px</dimen>
+    <dimen name="px_240">240px</dimen>
+    <dimen name="px_250">250px</dimen>
+    <dimen name="px_255">255px</dimen>
+    <dimen name="px_260">260px</dimen>
+    <dimen name="px_270">270px</dimen>
+    <dimen name="px_280">280px</dimen>
+    <dimen name="px_290">290px</dimen>
+    <dimen name="px_300">300px</dimen>
+    <dimen name="px_320">320px</dimen>
+    <dimen name="px_310">310px</dimen>
+    <dimen name="px_315">315px</dimen>
+    <dimen name="px_350">350px</dimen>
+    <dimen name="px_380">380px</dimen>
+    <dimen name="px_116">116px</dimen>
+    <dimen name="px_548">548px</dimen>
+    <dimen name="px_500">500px</dimen>
+    <dimen name="px_400">400px</dimen>
+    <dimen name="px_450">450px</dimen>
+    <dimen name="px_600">600px</dimen>
+    <dimen name="px_650">650px</dimen>
+    <dimen name="px_700">700px</dimen>
+    <dimen name="px_800">800px</dimen>
+    <dimen name="px_900">900px</dimen>
+    <dimen name="px_1800">1800px</dimen>
+    <dimen name="half_arrow_height">20dp</dimen>
+</resources>

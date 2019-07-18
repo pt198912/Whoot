@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:paddingBottom="15dp"
+    android:background="@color/hen"
+    android:gravity="bottom|center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/listview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/fl_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:id="@+id/listview_header_text">
+
+            <TextView
+                android:id="@+id/refresh_status_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:visibility="visible"
+                android:textSize="12sp"
+                android:text="@string/listview_header_hint_normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:text="@string/listview_header_last_time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/last_refresh_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fl_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/listview_header_arrow"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/load_1"
+
+             />
+        <!--<ProgressBar-->
+            <!--android:id="@+id/hahh"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:indeterminate="false"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:indeterminateDrawable="@drawable/progressbar"/>-->
+        <ImageView
+            android:id="@+id/hahh"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/progressbar"
+            />
+        </FrameLayout>
+        <com.github.jdsjlzx.view.SimpleViewSwitcher
+            android:id="@+id/listview_header_progressbar"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_toLeftOf="@id/listview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

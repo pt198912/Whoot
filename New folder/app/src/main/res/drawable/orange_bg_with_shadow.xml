@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 阴影部分 -->
+    <!-- 个人觉得更形象的表达：top代表下边的阴影高度，left代表右边的阴影宽度。其实也就是相对应的offset，solid中的颜色是阴影的颜色，也可以设置角度等等 -->
+
+
+    <item
+        android:bottom="0.5dp"
+        android:left="0.5dp"
+        android:top="0.5dp"
+        android:right="0.5dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="270"
+                android:endColor="#0fFC4C1A"
+                android:startColor="#FC4C1A"
+                android:type="linear" />
+
+            <corners
+                android:bottomLeftRadius="100dp"
+                android:bottomRightRadius="100dp"
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <!-- 背景部分 -->
+    <!-- 形象的表达：bottom代表背景部分在上边缘超出阴影的高度，right代表背景部分在左边超出阴影的宽度（相对应的offset） -->
+    <item
+        android:left="1dp"
+        android:top="0.5dp"
+        android:right="1dp"
+        android:bottom="6dp"
+        >
+        <shape android:shape="rectangle" >
+
+            <gradient
+                android:centerColor="#f96519"
+                android:endColor="#f58119"
+                android:startColor="#fc4a1a"
+                android:type="linear" />
+
+            <corners
+                android:bottomLeftRadius="100dp"
+                android:bottomRightRadius="100dp"
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+
+</layer-list>

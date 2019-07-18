@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_10"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/expiredcoupons_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/item_coup_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_60"
+                    android:layout_marginRight="@dimen/px_60"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:background="@drawable/expiredcoupons_icon_diamond" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/px_40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_coup_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:gravity="center"
+                        android:text="钻石优惠卷"
+                        android:textColor="@color/text_color_black_v1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/item_coup_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:gravity="center"
+                        android:text="过期时间：2018.02.25 14:00"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.app.whoot.ui.view.custom.RotateTextView
+            android:id="@+id/item_coup_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/linearLayout_one"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout_one"
+            android:layout_marginRight="@dimen/px_15"
+            android:layout_marginTop="@dimen/px_10"
+            android:background="@drawable/expiredcoupons_tag"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:paddingTop="@dimen/px_20"
+            android:textColor="@color/white"
+            android:text="" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_back"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_bg"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_150"
+            android:background="@drawable/logo_color"/>
+        <TextView
+            android:id="@+id/about_txt"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_250"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version: v1.1.0"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/px_380"
+               android:layout_marginLeft="@dimen/px_30"
+               android:layout_marginRight="@dimen/px_20"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:maxLines="15"
+                   android:inputType="textMultiLine"
+                   android:textSize="12sp"
+                   android:text="@string/Introduction_one"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:maxLines="5"
+                   android:inputType="textMultiLine"
+                   android:layout_marginTop="@dimen/px_40"
+                   android:textColor="@color/text_color_black_v1"
+                   android:text="@string/Introduction_twe"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:maxLines="5"
+                   android:inputType="textMultiLine"
+                   android:layout_marginTop="@dimen/px_20"
+                   android:textSize="12sp"
+                   android:text="@string/Introduction_three"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:maxLines="5"
+                   android:inputType="textMultiLine"
+                   android:layout_marginTop="@dimen/px_40"
+                   android:textColor="@color/text_color_black_v1"
+                   android:text="@string/Introduction_four"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:maxLines="5"
+                   android:inputType="textMultiLine"
+                   android:layout_marginTop="@dimen/px_20"
+                   android:textSize="12sp"
+                   android:text="@string/Introduction_five"/>
+               <TextView
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:singleLine="false"
+                   android:ellipsize="none"
+                   android:textSize="12sp"
+                   android:inputType="textMultiLine"
+                   android:layout_marginTop="@dimen/px_40"
+                   android:text="@string/youtubi"/>
+               <TextView
+                   android:id="@+id/about_web"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="12sp"
+                   android:textColor="@color/main_tab_defaule"
+
+                  />
+
+           </LinearLayout>
+    </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

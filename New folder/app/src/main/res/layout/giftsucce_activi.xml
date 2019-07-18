@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scanning_bg_success"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                     android:visibility="invisible"
+                    android:background="@drawable/topnav_icon_white_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fail_me"
+
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_200"
+                android:background="@drawable/scanning_pic_success" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:gravity="center"
+            android:text="@string/succes"
+            android:textColor="@color/text_color_black_v1"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/giftsuaa"
+        android:layout_width="@dimen/px_300"
+        android:layout_height="@dimen/px_200"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/px_50"
+        android:background="@drawable/storedetail_top5_blank_pic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/px_20"
+        android:textColor="@color/text_color_black_v1"
+        android:text="@string/share"/>
+    <LinearLayout
+        android:id="@+id/succ_ly_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/px_80"
+        android:layout_marginTop="@dimen/px_40"
+        android:background="@drawable/bootpage_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_15"
+            android:layout_marginLeft="@dimen/px_100"
+            android:layout_marginRight="@dimen/px_100"
+            android:padding="@dimen/px_15"
+            android:text="@string/share_one"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/giftsu_activi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/text_color_black_v2"
+            android:text="@string/login_o"/>
+    </LinearLayout>
+
+</LinearLayout>

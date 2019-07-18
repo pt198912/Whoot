@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regist_ly"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+     <include layout="@layout/title_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_30"
+        android:textColor="@color/card_cc"
+        android:text="@string/pleace_on"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_80"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_tab_defaule"
+                android:text="@string/code"/>
+            <TextView
+                android:id="@+id/regist_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_20"
+                android:text="+ 852"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@color/item" />
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/px_40"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/px_90"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:background="@color/text_color_black_v1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_tab_defaule"
+                android:text="@string/phone_number"/>
+            <com.app.whoot.ui.view.custom.ClearEditText
+                android:id="@+id/regist_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@null"
+                android:singleLine="true"
+                android:phoneNumber="true"
+                android:layout_marginRight="@dimen/px_60"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_40"
+                android:background="@color/item" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/regist_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:gravity="center"
+            android:paddingTop="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:paddingBottom="@dimen/px_30"
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn_one"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/regist_emil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_60"
+        android:textColor="@color/blue_one"
+        android:text="@string/email_login"/>
+    <include layout="@layout/picker_layout"/>
+</LinearLayout>

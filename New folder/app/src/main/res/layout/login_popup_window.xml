@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/login_pop"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/text_color_black_v1"
+            android:layout_marginBottom="@dimen/px_20"
+            android:text="@string/login_in"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_ly"/>
+        <TextView
+            android:id="@+id/login_pop_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/title"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_15"
+            android:text="@string/login_out"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/login_one"/>
+        <TextView
+            android:id="@+id/login_pop_cr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

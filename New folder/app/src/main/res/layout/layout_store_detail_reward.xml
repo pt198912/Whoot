@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_store_detail_reward"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="17dp"
+    >
+    <TextView android:id="@+id/tv_store_detail_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="@string/exchange_one"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/card_cc"/>
+    <com.app.whoot.ui.view.custom.MyGridView
+        android:id="@+id/rv_store_detail_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="9dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:focusableInTouchMode="false"
+        />
+    <TextView
+        android:id="@+id/tv_no_reward_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/reward_no"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

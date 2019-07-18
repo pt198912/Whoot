@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:duration="100" android:drawable="@drawable/loading_01" />
+    <item android:duration="100" android:drawable="@drawable/loading_02" />
+    <item android:duration="100" android:drawable="@drawable/loading_03" />
+    <item android:duration="100" android:drawable="@drawable/loading_04" />
+    <item android:duration="100" android:drawable="@drawable/loading_05" />
+    <item android:duration="100" android:drawable="@drawable/loading_06" />
+    <item android:duration="100" android:drawable="@drawable/loading_07" />
+    <item android:duration="100" android:drawable="@drawable/loading_08" />
+    <item android:duration="100" android:drawable="@drawable/loading_09" />
+    <item android:duration="100" android:drawable="@drawable/loading_10" />
+    <item android:duration="100" android:drawable="@drawable/loading_11" />
+    <item android:duration="100" android:drawable="@drawable/loading_12" />-->
+
+
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_0" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_1" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_2" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_3" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_4" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_5" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_6" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_7" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_8" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_9" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_10" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_11" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect__12" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_13" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_14" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_15" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_16" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_17" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_18" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_19" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_20" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_21" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_22" />
+    <item android:duration="20" android:drawable="@drawable/coin_light_effect_23" />
+
+    <!--<item android:duration="100" android:drawable="@drawable/load_22" />-->
+    <!--<item android:duration="100" android:drawable="@drawable/load_23" />-->
+    <!--<item android:duration="100" android:drawable="@drawable/load_24" />-->
+    <!--<item android:duration="100" android:drawable="@drawable/load_25" />-->
+    <!--<item android:duration="100" android:drawable="@drawable/load_26" />-->
+    <!--<item android:duration="100" android:drawable="@drawable/load_27" />-->
+</animation-list>

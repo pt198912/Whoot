@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <include layout="@layout/title_carditem" />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_e_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:id="@+id/coordinator"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedTitleGravity="left"
+                app:expandedTitleGravity="left|bottom"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+                <include layout="@layout/layout_store_detail_header"
+                    />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <!--<com.androidkun.xtablayout.XTabLayout-->
+                <!--android:id="@+id/tablayout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--app:xTabIndicatorColor="@color/main_gold"-->
+                <!--app:xTabIndicatorHeight="2.5dp"-->
+                <!--app:xTabMode="scrollable"-->
+                <!--app:xTabSelectedTextColor="@color/main_gold"-->
+                <!--app:xTabSelectedTextSize="17sp"-->
+                <!--app:xTabTextColor="@color/card_cc"-->
+                <!--app:xTabTextSize="17sp">-->
+
+            <!--</com.androidkun.xtablayout.XTabLayout>-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/main_gold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:tabGravity="center"
+                app:tabMode="scrollable"
+                app:tabMinWidth="100dp"
+                app:tabSelectedTextColor="@color/main_gold"
+                android:textSize="17sp"
+                app:tabIndicatorHeight="0dp"
+                app:tabTextColor="@color/card_cc"/>
+            <!--<net.lucode.hackware.magicindicator.MagicIndicator-->
+                <!--android:id="@+id/tablayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <TextView android:id="@+id/tv_store_close_status"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/closs_wei"
+            android:textSize="15sp"
+            android:background="#90000000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"/>
+        <include layout="@layout/empty_view_no_network"
+            android:id="@+id/no_network_view"
+            android:visibility="gone"/>
+    </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

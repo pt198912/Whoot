@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/token_detail_bg"
+       >
+        <TextView
+            android:id="@+id/tv_token_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_30"
+            android:text="Silver Token"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/text_color_black_v1"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/item"/>
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_marginBottom="@dimen/px_20"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:id="@+id/token_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none"
+                    android:divider="@null" />
+            </LinearLayout>
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/list_finsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@drawable/popup_icon_close" />
+
+
+</LinearLayout>

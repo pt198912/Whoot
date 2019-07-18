@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/find_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hen">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:collapsedTitleGravity="left|bottom"
+                app:expandedTitleGravity="left|bottom"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.donkingliang.banner.CustomBanner
+                    android:id="@+id/find_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    app:layout_collapseMode="parallax"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/title_tool_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+                    <include layout="@layout/find_frag_title" />
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+            <!--选择设定-->
+            <LinearLayout
+                android:id="@+id/frag_find_ly"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_find_dish_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_frag_find_dish_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingBottom="@dimen/px_10"
+                        android:text="@string/label_all_food"
+                        android:textColor="@color/color_9c9c9c"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_dish_style_sel"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_find_consumption"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_frag_find_consumption"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingBottom="@dimen/px_10"
+                        android:text="@string/label_consumption"
+                        android:textColor="@color/color_9c9c9c"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_consumption_sel"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_frag_find_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_frag_find_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/px_10"
+                        android:paddingBottom="@dimen/px_10"
+                        android:text="@string/label_rating"
+                        android:textColor="@color/color_9c9c9c"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/arrow_down"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+
+            <!--价格选择-->
+            <LinearLayout
+                android:id="@+id/frag_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/filter_pop" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/frag_recyc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_marginBottom="@dimen/px_20"
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/filter_pop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/hen" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/frag_ding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_searchnone" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_50"
+                    android:text="@string/ding"
+                    android:textColor="@color/text_color_black_v1" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_40"
+
+                    android:text="@string/wei" />
+
+                <TextView
+                    android:id="@+id/frag_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_40"
+                    android:background="@drawable/useex_shape"
+                    android:paddingLeft="@dimen/px_90"
+                    android:paddingTop="@dimen/px_10"
+                    android:paddingRight="@dimen/px_90"
+                    android:paddingBottom="@dimen/px_10"
+                    android:text="@string/md_sz"
+                    android:textColor="@color/text_color_black_v1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frag_d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blank_searchnone" />
+
+                <TextView
+                    android:id="@+id/frag_ding_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_50"
+                    android:text="@string/ding"
+                    android:textColor="@color/text_color_black_v1" />
+
+                <TextView
+                    android:id="@+id/frag_ding_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_40"
+                    android:text="@string/wei"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/no_network_view"
+                layout="@layout/empty_view_no_network"
+                android:visibility="gone"/>
+
+
+        <FrameLayout
+            android:id="@+id/frag_fi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <ImageView android:id="@+id/iv_map_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:src="@drawable/loginpage_btn_arrow"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feco_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/hen"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:id="@+id/frag_lo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_weight="1"
+                android:text="@string/log_deng"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/login_deng"
+                android:clickable="false"
+                android:paddingLeft="15dp"
+                android:paddingTop="4dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="4dp"
+                android:text="@string/log_lu"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frag_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/frag_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blank_searchnone"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/frag_ly_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_50"
+                android:text="@string/sou_suo"
+                android:textColor="@color/text_color_black_v1"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

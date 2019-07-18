@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/gif_1" />
+    <item android:duration="50" android:drawable="@drawable/gif_2" />
+    <item android:duration="50" android:drawable="@drawable/gif_3" />
+    <item android:duration="50" android:drawable="@drawable/gif_4" />
+    <item android:duration="50" android:drawable="@drawable/gif_5" />
+    <item android:duration="50" android:drawable="@drawable/gif_6" />
+    <item android:duration="50" android:drawable="@drawable/gif_7" />
+    <item android:duration="50" android:drawable="@drawable/gif_8" />
+    <item android:duration="50" android:drawable="@drawable/gif_9" />
+    <item android:duration="50" android:drawable="@drawable/gif_10" />
+    <item android:duration="50" android:drawable="@drawable/gif_11" />
+    <item android:duration="50" android:drawable="@drawable/gif_12" />
+    <item android:duration="50" android:drawable="@drawable/gif_13" />
+    <item android:duration="50" android:drawable="@drawable/gif_14" />
+    <item android:duration="50" android:drawable="@drawable/gif_15" />
+    <item android:duration="50" android:drawable="@drawable/gif_16" />
+    <item android:duration="50" android:drawable="@drawable/gif_17" />
+    <item android:duration="50" android:drawable="@drawable/gif_18" />
+    <item android:duration="50" android:drawable="@drawable/gif_19" />
+    <item android:duration="50" android:drawable="@drawable/gif_20" />
+    <item android:duration="50" android:drawable="@drawable/gif_21" />
+    <item android:duration="50" android:drawable="@drawable/gif_22" />
+    <item android:duration="50" android:drawable="@drawable/gif_23" />
+    <item android:duration="50" android:drawable="@drawable/gif_24" />
+    <item android:duration="50" android:drawable="@drawable/gif_25" />
+    <item android:duration="50" android:drawable="@drawable/gif_26" />
+    <item android:duration="50" android:drawable="@drawable/gif_27" />
+    <item android:duration="50" android:drawable="@drawable/gif_28" />
+    <item android:duration="50" android:drawable="@drawable/gif_29" />
+    <item android:duration="50" android:drawable="@drawable/gif_30" />
+    <item android:duration="50" android:drawable="@drawable/gif_30" />
+    <item android:duration="50" android:drawable="@drawable/gif_30" />
+    <item android:duration="50" android:drawable="@drawable/gif_30" />
+</animation-list>

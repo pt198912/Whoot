@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/map_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_96"
+            android:layout_marginLeft="@dimen/px_30"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_20"
+                android:src="@drawable/storedetail_map_icon_baidumap"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/baidu_an"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color_black_v1"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/map_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_30"
+                android:visibility="invisible"
+                android:background="@drawable/me_setting_btn_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@color/item" />
+        <LinearLayout
+            android:id="@+id/map_ch_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_96"
+            android:layout_marginLeft="@dimen/px_30"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_20"
+                android:src="@drawable/storedetail_map_icon_googlepmap"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/google_an"
+                android:textSize="18sp"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color_black_v1" />
+
+            <ImageView
+                android:id="@+id/map_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_30"
+                android:visibility="invisible"
+                android:background="@drawable/me_setting_btn_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@color/item" />
+        <LinearLayout
+            android:id="@+id/map_china_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_96"
+            android:layout_marginLeft="@dimen/px_30"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_20"
+                android:src="@drawable/storedetail_map_icon_gaode"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gaode_an"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color_black_v1"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/map_img0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_30"
+                android:visibility="invisible"
+                android:background="@drawable/me_setting_btn_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/px_30"
+            android:background="@color/item" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/map_set_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:layout_marginLeft="@dimen/px_40"
+        android:text="@string/set_map"/>
+</LinearLayout>

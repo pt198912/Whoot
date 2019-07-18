@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@drawable/gifts_bg_used_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingTop="@dimen/px_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_20"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@drawable/gifts_icon_gift_c" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gift_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/gift_item_na"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="" />
+                <TextView
+                    android:id="@+id/gift_item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_4"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginBottom="@dimen/px_15"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@color/item" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_overdue_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:visibility="invisible"
+                android:textColor="@color/title"
+                android:text="write a review by " />
+
+            <TextView
+                android:id="@+id/item_overdue_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@drawable/use_shape"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="@dimen/px_30"
+                android:paddingRight="@dimen/px_30"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/evaluation"
+                android:textColor="@color/title" />
+
+            <TextView
+                android:id="@+id/item_overdue_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@drawable/useex_shape"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="@dimen/px_30"
+                android:paddingRight="@dimen/px_30"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/see"
+                android:textColor="@color/text_color_black_v3"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

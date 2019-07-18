@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picker_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-620dp"
+    android:background="#99232323"
+    android:visibility="gone"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+
+        <com.app.whoot.ui.view.custom.PickerScrollView
+            android:id="@+id/pickerscrlllview"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="@dimen/px_50"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/pickerscrlllview"
+            android:layout_marginTop="-95dp"
+            android:background="@drawable/picker_tv_bg" />
+
+
+        <LinearLayout
+            android:id="@+id/picker_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/picker_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px_80"
+                android:paddingRight="@dimen/dp_40"
+                android:paddingTop="@dimen/px_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:textColor="@color/main_tab_defaule"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/picker_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_gold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px_80"
+                android:paddingRight="@dimen/dp_40"
+                android:paddingTop="@dimen/px_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/submit"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/item"
+            android:layout_below="@id/picker_ly" />
+    </RelativeLayout>
+
+</RelativeLayout>

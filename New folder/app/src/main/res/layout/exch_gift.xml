@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/title_back"/>
+
+    <LinearLayout
+        android:id="@+id/exch_gift_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blank_gifts"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/gift_no"/>
+    </LinearLayout>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/recycle_view_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/exch_item"/>
+    <include layout="@layout/empty_view_no_network"
+        android:id="@+id/no_network_view"/>
+</LinearLayout>

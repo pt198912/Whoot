@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+  <!--  <TextView
+        android:id="@+id/loading_end_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_14" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:text="左右滑动看看有啥好玩的？"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_14" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tutor_tutor_arrow_l"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_tumeimei"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tutor_tutor_arrow_r"/>
+    </LinearLayout>-->
+    <TextView
+        android:id="@+id/loading_end_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:text="@string/list_footer_end_no_data"
+        android:textColor="@color/login_terms"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

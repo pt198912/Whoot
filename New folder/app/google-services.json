@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "516500673783",
+    "firebase_url": "https://project-whoot.firebaseio.com",
+    "project_id": "project-whoot",
+    "storage_bucket": "project-whoot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516500673783:android:836182ba4e186254",
+        "android_client_info": {
+          "package_name": "com.app.whoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516500673783-a6u87l5cnbe24rrgvie810kgc9f581pq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.whoot",
+            "certificate_hash": "df07f7d93df6927d6c759c85278161b79de19fc3"
+          }
+        },
+        {
+          "client_id": "516500673783-v5ncv9h3nppek34d6c5bdjo4oos0hq6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.whoot",
+            "certificate_hash": "53e25a89f4152afd9c2f6aca37dc54f882ff52f4"
+          }
+        },
+        {
+          "client_id": "516500673783-4gggld2sv9dm6d4rh4chef3rvdru7thh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnes2tlykl97JvjWKgAg-BeHBrrkhtkHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516500673783-h0c5ggiod363hiu6e7fen2k1or9ftlmc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "516500673783-1kr3i166b2q6q7pu46q7k4ft0mvsl6ke.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Ingcreations.whootLocal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516500673783:android:a930d8bfc9b54925",
+        "android_client_info": {
+          "package_name": "com.business.whoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516500673783-4gggld2sv9dm6d4rh4chef3rvdru7thh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnes2tlykl97JvjWKgAg-BeHBrrkhtkHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516500673783-h0c5ggiod363hiu6e7fen2k1or9ftlmc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "516500673783-1kr3i166b2q6q7pu46q7k4ft0mvsl6ke.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Ingcreations.whootLocal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

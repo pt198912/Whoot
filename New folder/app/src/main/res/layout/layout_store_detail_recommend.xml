@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:id="@+id/ll_store_detail_recommend">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="17dp"
+        android:gravity="center_vertical">
+    <TextView android:id="@+id/tv_store_detail_recommend"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="@string/recommed_dish"
+        android:textColor="@color/card_cc"/>
+        <TextView
+            android:id="@+id/tv_recommend_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_recommend"
+            android:textSize="13sp"
+            android:textColor="@color/color_fc4c1a"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_store_detail_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="17dp"
+       />
+</LinearLayout>

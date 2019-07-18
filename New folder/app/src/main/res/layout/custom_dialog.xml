@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_corner"
+    android:layout_marginTop="@dimen/px_10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_forget_icon_sendmail"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/px_30"
+        android:textColor="@color/text_color_black_v1"
+        android:text="@string/reset_pa"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:text="@string/inbox"/>
+    <LinearLayout
+        android:id="@+id/reset_my_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_50"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px_90"
+            android:paddingTop="@dimen/px_20"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingRight="@dimen/px_90"
+            android:text="@string/back_log"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/log_shape"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

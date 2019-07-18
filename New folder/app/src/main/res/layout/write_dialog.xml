@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/giftlink_expired_bg_meitu_1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_80"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/card_cc"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginRight="@dimen/px_40"
+                android:textStyle="bold"
+                android:text="@string/write_dia"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:singleLine="false"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/main_gold"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:text="@string/yes_rated"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_40"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/token_icon_bronze"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color_black_v1"
+                    android:text="⨯1"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/write_dialog_ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginRight="@dimen/px_40"
+                android:layout_marginTop="@dimen/px_30"
+                android:layout_marginBottom="@dimen/px_20"
+                android:background="@drawable/log_shape">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px_25"
+                    android:layout_marginLeft="@dimen/px_100"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/px_100"
+                    android:layout_marginTop="@dimen/px_25"
+                    android:text="@string/publish"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/vox_finsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/popup_icon_close" />
+</LinearLayout>

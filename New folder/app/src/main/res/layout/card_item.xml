@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_carditem" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_e_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+    <ScrollView
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/card_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_500"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:visibility="gone"
+                    android:background="@drawable/home_blank_pic"
+                    tools:ignore="ContentDescription" />
+                <!-- 设置普通指示器 -->
+                <com.donkingliang.banner.CustomBanner
+                    android:id="@+id/card_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:indicatorStyle="ORDINARY"
+                    app:indicatorGravity="CENTER"
+                    app:indicatorSelectRes="@drawable/shape_point_select"
+                    app:indicatorUnSelectRes="@drawable/shape_point_unselect"
+                    app:indicatorInterval="5dp"/>
+
+                <TextView
+                    android:id="@+id/card_item_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/px_30"
+                    android:background="@color/nh_percent"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingTop="@dimen/px_10"
+                    android:paddingRight="@dimen/px_20"
+                    android:paddingLeft="@dimen/px_20"
+                    android:text="@string/soon"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                     />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/car_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/card_item_nameEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:textColor="@color/main_tab_defaule"
+                    android:textSize="13sp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:text="" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/car_item_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_30"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:background="@drawable/home_shape"
+                        android:paddingLeft="@dimen/px_20"
+                        android:paddingRight="@dimen/px_20"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/card_item_img0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:background="@drawable/icon_star_10" />
+
+                        <ImageView
+                            android:id="@+id/card_item_img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:background="@drawable/icon_star_10" />
+
+                        <ImageView
+                            android:id="@+id/card_item_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:background="@drawable/icon_star_10" />
+
+                        <ImageView
+                            android:id="@+id/card_item_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:background="@drawable/icon_star_10" />
+
+                        <ImageView
+                            android:id="@+id/card_item_img4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:background="@drawable/icon_star_10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/car_item_score_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:layout_weight="1"
+                        android:text="@string/home_item_fen" />
+
+                    <TextView
+                        android:id="@+id/car_item_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_marginRight="@dimen/px_50"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_icon_tag" />
+
+                <TextView
+                    android:id="@+id/car_item_dish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="" />
+                <LinearLayout
+                    android:id="@+id/car_msg_img_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/car_msg_mon_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/px_50"
+                        />
+                    <ImageView
+                        android:id="@+id/car_msg_mon_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/px_10"
+                        />
+                    <ImageView
+                        android:id="@+id/car_msg_mon_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/px_10"
+                        />
+                    <ImageView
+                        android:id="@+id/car_msg_mon_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/px_10"
+                        />
+                    <ImageView
+                        android:id="@+id/car_msg_mon_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_10"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@drawable/home_icon_minspend"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/car_item_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="@string/home_item_mon"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/card_miao_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+            <LinearLayout
+                android:id="@+id/card_miao_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/card_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_color_black_v1"
+                    android:maxLines="1"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:id="@+id/card_item_miao"
+                    android:layout_width="@dimen/px_100"
+                    android:layout_height="@dimen/px_30"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/card_arrow_miao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/arrow_down"/>
+                    <ImageView
+                        android:id="@+id/card_item_arrow_miao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/storedetail_arrow_up"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <LinearLayout
+                android:id="@+id/crd_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/storedetail_icon_opentime" />
+                <TextView
+                    android:id="@+id/card_qi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="@dimen/px_15"
+                    android:textColor="@color/text_color_black_v1"
+                    android:text=""/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/card_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_15"
+                        android:text=""
+                        android:textColor="@color/text_color_black_v1" />
+
+                    <TextView
+                        android:id="@+id/card_time_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:text="/" />
+
+                    <TextView
+                        android:id="@+id/card_time_cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_color_black_v1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_item_arrow"
+                    android:layout_width="@dimen/px_100"
+                    android:layout_height="@dimen/px_30"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/card_arrow_ig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/arrow_down"/>
+                    <ImageView
+                        android:id="@+id/card_item_arrow_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/storedetail_arrow_up"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.app.whoot.ui.view.custom.MyListView
+                android:id="@+id/car_item_list"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/px_80"
+                android:divider="@null"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/storedetail_icon_location" />
+
+                <LinearLayout
+                    android:id="@+id/card_item_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/card_item_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:layout_marginRight="@dimen/px_60"
+                        android:layout_weight="1"
+                        android:background="@drawable/dizhi"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:paddingBottom="@dimen/px_20"
+                        android:paddingTop="@dimen/px_20"
+                        android:text=""
+                        android:textColor="@color/card_cc" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/card_item_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_40"
+                    android:background="@drawable/storedetail_icon_phone" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/card_info_vi"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+            <LinearLayout
+                android:id="@+id/card_info_lyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/storedetail_icon_info"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:textColor="@color/text_color_black_v1"
+                    android:text="@string/info"/>
+            </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/card_info_ly"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/px_10"
+                 android:orientation="horizontal">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:layout_marginLeft="@dimen/px_80"
+                     android:orientation="horizontal">
+                     <ImageView
+                         android:id="@+id/card_info_vegen"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         />
+                     <TextView
+                         android:id="@+id/card_info_vegn_txt"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="@dimen/px_10"
+                         android:text=""/>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/card_info_card"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="@dimen/px_80"
+                         />
+                     <TextView
+                         android:id="@+id/card_info_card_txt"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="@dimen/px_10"
+                         android:text="" />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:id="@+id/card_item_info"
+                     android:layout_width="@dimen/px_80"
+                     android:layout_height="@dimen/px_30"
+                     android:gravity="center"
+                     android:layout_gravity="center"
+                     android:orientation="vertical">
+                     <ImageView
+                         android:id="@+id/card_info_ig"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="visible"
+                         android:background="@drawable/arrow_down"/>
+                     <ImageView
+                         android:id="@+id/card_item_info_img"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="gone"
+                         android:background="@drawable/storedetail_arrow_up"/>
+                 </LinearLayout>
+             </LinearLayout>
+
+            <com.app.whoot.ui.view.custom.MyGridView
+                android:id="@+id/card_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_80"
+                android:layout_marginRight="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_15"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+
+            <ImageView
+                android:id="@+id/img_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dizhi"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/login_hao" />
+
+            <LinearLayout
+                android:id="@+id/card_fou_lt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/storedetail_icon_coupon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="@string/exchange_one"
+                    android:textColor="@color/card_cc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/login_hao" />-->
+
+            <TextView
+                android:id="@+id/card_no_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_100"
+                android:layout_marginTop="@dimen/px_100"
+                android:gravity="center"
+                android:text="@string/reward_no"
+                android:visibility="gone" />
+
+            <com.app.whoot.ui.view.custom.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_30"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" />
+            <!--推荐商品-->
+            <View
+                android:id="@+id/card_vie"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <View
+                android:id="@+id/card_vi"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/login_hao" />
+
+            <LinearLayout
+                android:id="@+id/card_more_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/storedetail_icon_topfive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="@string/top"
+                    android:textColor="@color/card_cc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:background="@drawable/storedetail_icon_arrow" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/horr_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"/>
+            <!--评论-->
+            <View
+                android:id="@+id/card_item_view0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+
+            <View
+                android:id="@+id/card_item_view1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/login_hao" />
+
+            <LinearLayout
+                android:id="@+id/card_item_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_st"
+                    android:textColor="@color/lo"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"/>
+                <com.app.whoot.ui.view.custom.StarRatingView
+                    android:id="@+id/card_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_marginRight="@dimen/px_30"
+                    app:stat_on="@drawable/reviewsubmit_icon_star_10"
+                    app:stat_off="@drawable/reviewsubmit_icon_star_0"
+                    app:stat_half="@drawable/reviewsubmit_icon_star_10"
+                    app:star_padding="10dp"
+                    app:ratable="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_30"
+                android:background="@color/item" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/login_hao" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/storedetail_icon_reviews" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="@string/ratings"
+                    android:textColor="@color/card_cc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/card_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/card_ly"
+                    android:layout_width="@dimen/px_150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/card_tx_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_all"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:background="@drawable/storedetail_icon_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@color/item" />
+
+            <TextView
+                android:id="@+id/card_no_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_100"
+                android:layout_marginTop="@dimen/px_100"
+                android:gravity="center"
+                android:text="@string/reviews_no"
+                android:visibility="gone" />
+
+            <com.app.whoot.ui.view.custom.MyListView
+                android:id="@+id/home_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/px_20"
+                android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/empty_view_no_network"
+        android:id="@+id/no_network_view"/>
+</LinearLayout>

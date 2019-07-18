@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="15dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+
+        android:orientation="horizontal">
+        <FrameLayout android:layout_width="89dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_15">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/dialog_item_image"
+            android:layout_width="89dp"
+            android:layout_height="74dp"
+
+            android:scaleType="centerCrop"
+            app:riv_mutate_background="true"
+            app:riv_corner_radius="4dp"
+            android:background="@drawable/review_pic_blank"
+            />
+            <LinearLayout
+                android:id="@+id/ll_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:background="@drawable/dark_tranparent"
+                android:layout_marginTop="6dp">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/home_icon_time"/>
+                <TextView android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11sp"
+                    android:text=""/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_18"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dialog_map_txt_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_black_v1"
+                    android:text="居酒屋" />
+                <ImageView
+                    android:id="@+id/dialog_img_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:background="@drawable/map_icon_close"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_name_en_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/px_18"
+                android:textColor="@color/text_color_black_v1"
+                android:text="sd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/px_10">
+                <TextView
+                    android:id="@+id/dialog_map_item_score_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_18"
+                    android:background="@drawable/home_shape"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:visibility="gone"
+                    android:text="4.8"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/px_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dialog_map_ex_0_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:background="@drawable/icon_star_10" />
+
+                    <ImageView
+                        android:id="@+id/dialog_map_ex_1_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:background="@drawable/icon_star_10" />
+
+                    <ImageView
+                        android:id="@+id/dialog_map_ex_2_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:background="@drawable/icon_star_10" />
+
+                    <ImageView
+                        android:id="@+id/dialog_map_ex_3_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:background="@drawable/icon_star_10" />
+
+                    <ImageView
+                        android:id="@+id/dialog_map_ex_4_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:background="@drawable/icon_star_10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_map_item_score_one_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="@string/home_item_fen" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:visibility="gone"
+                    android:text="0.5km" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dialog_map_item_dish_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hong Kong Style"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/main_gold"
+                android:textSize="9sp"
+                android:clickable="false"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/open_shape"/>
+                <TextView
+                    android:id="@+id/dialog_map_closing_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Closing Soon"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/main_gold"
+                    android:textSize="9sp"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/open_shape"/>
+                <TextView
+                    android:id="@+id/dialog_map_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible"
+                    android:textColor="@color/main_gold"
+                    android:textSize="9sp"
+
+                    android:clickable="false"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/open_shape"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40"
+        android:layout_marginLeft="@dimen/px_15"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/dialog_map_item_distance_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="0.5km away from your location"/>
+
+        <LinearLayout
+            android:id="@+id/dialog_map_ly_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/map_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginRight="@dimen/px_40"
+                android:textColor="@color/main_gold"
+                android:layout_gravity="center"
+                android:text="@string/qianwang"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginLeft="@dimen/px_30"
+        android:layout_marginRight="@dimen/px_30"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dialog_map_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/text_color_black_v1"
+                android:text="" />
+            <ImageView
+                android:id="@+id/dialog_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@drawable/map_icon_close"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_name_en"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:textColor="@color/text_color_black_v1"
+            android:text="sd" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_map_item_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_10"
+                android:background="@drawable/home_shape"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:textSize="9sp"
+                android:text="4.8"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dialog_map_ex_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/dialog_map_ex_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/dialog_map_ex_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/dialog_map_ex_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_star_10" />
+
+                <ImageView
+                    android:id="@+id/dialog_map_ex_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_star_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog_map_item_score_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginTop="@dimen/px_10"
+
+                android:text="@string/home_item_fen" />
+
+            <TextView
+                android:id="@+id/dialog_map_item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginTop="@dimen/px_10"
+                android:text="0.5km" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_icon_tag" />
+
+            <TextView
+                android:id="@+id/dialog_map_item_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:text="" />
+            <LinearLayout
+                android:id="@+id/map_msg_img_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/map_msg_mon_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_50"
+                    />
+                <ImageView
+                    android:id="@+id/map_msg_mon_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_10"
+                    />
+                <ImageView
+                    android:id="@+id/map_msg_mon_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_10"
+                    />
+                <ImageView
+                    android:id="@+id/map_msg_mon_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/px_10"
+                    />
+                <ImageView
+                    android:id="@+id/map_msg_mon_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:visibility="invisible"
+                android:background="@drawable/home_icon_minspend" />
+
+            <TextView
+                android:id="@+id/dialog_map_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:visibility="invisible"
+                android:text="@string/home_item_mon" />
+
+            <TextView
+                android:id="@+id/dialog_map_closing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_40"
+                android:textColor="@color/nh_percent"
+                android:text="@string/soon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_map_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/map_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/px_15"
+                android:textColor="@color/title"
+                android:layout_gravity="center"
+
+                android:text="@string/go_there"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

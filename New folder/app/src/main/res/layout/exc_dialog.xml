@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/storedetail_rewarditem_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/exc_pl"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/px_380"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               tools:ignore="ContentDescription"
+               android:scaleType="fitXY" />
+           <TextView
+               android:id="@+id/card_item_exc"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#10000000"
+               android:padding="@dimen/px_12"
+               android:text="心点"
+               android:paddingLeft="@dimen/px_20"
+               android:layout_marginTop="@dimen/px_310"
+               android:textColor="@color/white"
+               android:textSize="16sp" />
+       </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rewards"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/exc_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@drawable/icon_bronze" />
+
+                <TextView
+                    android:id="@+id/exc_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="X1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_dui"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/exc_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  1/10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exc_ly"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_30"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/exc_ly_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/sao_img"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/exc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/main_gold"
+                    android:visibility="gone"
+                    android:text="@string/shi"/>
+                <com.app.whoot.ui.view.custom.TimerTextView
+                    android:id="@+id/exc_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textColor="@color/nh_percent"
+                    android:text="@string/no_cored"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/box_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:visibility="gone" />
+
+        <!---->
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="vertical">
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail"
+            android:textColor="@color/text_color_black_v1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/exc_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:textColor="@color/card_cc"
+            android:text=""
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="@dimen/px_20"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/vox_finsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/popup_icon_close" />
+</LinearLayout>

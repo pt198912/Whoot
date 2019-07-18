@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:star="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/write_ly"
+    android:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+
+    <include layout="@layout/title_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_50"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ratin"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+
+                <com.app.whoot.ui.view.custom.StarRatingView
+                    android:id="@+id/write_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    star:stat_on="@drawable/reviewsubmit_icon_star_10"
+                    star:stat_off="@drawable/reviewsubmit_icon_star_0"
+                    star:stat_half="@drawable/reviewsubmit_icon_star_10"
+                    star:star_padding="10dp"
+                    star:ratable="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_30"
+                android:text="@string/evaluation"
+                android:textColor="@color/text_color_black_v1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/write_edt"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginRight="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_10"
+                android:background="@drawable/edit_bg"
+                android:gravity="left|top"
+                android:hint="@string/write_e"
+                android:inputType="textMultiLine"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingTop="@dimen/px_10"
+                android:textCursorDrawable="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_30"
+                android:layout_marginTop="@dimen/px_30"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color_black_v1"
+                    android:text="@string/photo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="@string/photo_on"/>
+            </LinearLayout>
+
+            <com.app.whoot.ui.view.custom.MyGridView
+                android:id="@+id/write_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

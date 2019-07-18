@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="@drawable/bg_shadow"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_10"
+        android:paddingTop="@dimen/px_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_20"
+                android:layout_marginLeft="@dimen/px_30"
+                android:background="@drawable/usedcoupons_icon_bronze_en" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginTop="@dimen/px_4"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/px_15"
+                    android:text="x1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gift_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="22222222222222"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/gift_item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="22222222222222"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/gift_item_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:text="222222222222222222" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:textColor="@color/title"
+                android:text="write a review by 2018/12/18 to earn Whoot! Bux" />
+
+            <TextView
+                android:id="@+id/item_overdue_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@drawable/use_shape"
+                android:paddingBottom="@dimen/px_20"
+                android:paddingLeft="@dimen/px_30"
+                android:paddingRight="@dimen/px_30"
+                android:paddingTop="@dimen/px_20"
+                android:text="@string/evaluation"
+                android:textColor="@color/title" />
+
+            <TextView
+                android:id="@+id/item_overdue_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_30"
+                android:background="@drawable/useex_shape"
+                android:paddingBottom="@dimen/px_10"
+                android:paddingLeft="@dimen/px_30"
+                android:paddingRight="@dimen/px_30"
+                android:paddingTop="@dimen/px_10"
+                android:text="@string/see"
+                android:textColor="@color/text_color_black_v3"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/ding_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_50"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/invite_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reward_code"
+                android:textSize="16.0sp"
+                android:textColor="@color/map_colo"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="70dp"
+                android:paddingBottom="15dp"
+
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/invie_positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/main_tab_defaule"
+                android:layout_marginLeft="@dimen/px_40"
+                android:textSize="15.0sp"
+                android:background="@drawable/invite_shape"
+                android:text="@string/invite_chong" />
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/invie_negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/px_40"
+                android:background="@drawable/login_deng"
+                android:text="@string/invite_login" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/notice_icon_warning" />
+
+</RelativeLayout>

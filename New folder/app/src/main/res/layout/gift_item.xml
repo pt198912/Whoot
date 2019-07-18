@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/px_10"
+        android:paddingBottom="@dimen/px_10"
+        android:background="@drawable/gifts_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@drawable/gifts_icon_a" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px_50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/px_10"
+                android:textColor="@color/text_color_black_v1"
+                android:text="" />
+            <TextView
+                android:id="@+id/gift_item_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/text_color_black_v2"
+                android:text="" />
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                 <TextView
+                     android:id="@+id/gift_item_text"
+                     android:layout_marginTop="@dimen/px_10"
+                     android:layout_width="match_parent"
+                     android:layout_weight="1"
+                     android:layout_height="wrap_content"
+                     android:text="" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/use_shape"
+                     android:layout_marginRight="@dimen/px_20"
+                     android:layout_marginTop="@dimen/px_20"
+                     android:paddingBottom="@dimen/px_10"
+                     android:paddingLeft="@dimen/px_30"
+                     android:layout_marginBottom="@dimen/px_10"
+                     android:paddingRight="@dimen/px_30"
+                     android:textColor="@color/title"
+                     android:paddingTop="@dimen/px_10"
+                     android:text="@string/gift_re" />
+             </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

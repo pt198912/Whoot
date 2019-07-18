@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/exch_item"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px_30"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_30"
+            android:layout_marginLeft="@dimen/px_30"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gifts_icon_gift_expired" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_50"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exch_gift_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="22222222222222"
+                    android:textColor="@color/text_color_black_v1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/exch_gift_item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:text="222222222222222222" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.app.whoot.ui.view.custom.RotateTextView
+            android:id="@+id/item_coup_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/linearLayout_one"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout_one"
+            android:textColor="@color/white"
+            android:background="@drawable/expiredcoupons_tag"
+            android:gravity="center"
+            android:paddingBottom="22dp"
+            android:text="@string/expired" />
+    </RelativeLayout>
+</LinearLayout>

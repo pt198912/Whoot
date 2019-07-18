@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#7fa87f</color>
+    <color name="brown">#9E8971</color>
+    <color name="login_terms">#9E8971</color>
+    <color name="comm_c">#f5f1e9</color>
+    <color name="comm_b">#6b625d</color>
+    <color name="color_999999">#999999</color>
+    <color name="hen">#F3F4F6</color>
+</resources>

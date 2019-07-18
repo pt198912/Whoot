@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/title_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_80"
+        android:layout_marginLeft="@dimen/px_50"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_cc"
+            android:text="@string/code_num"/>
+        <TextView
+            android:id="@+id/verif_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/card_cc"
+            android:textStyle="bold"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_50"
+        android:layout_marginTop="@dimen/px_20"
+        android:textColor="@color/main_tab_defaule"
+        android:text="@string/give_us"/>
+    <com.app.whoot.ui.view.custom.CodeEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/px_100"
+        android:layout_marginRight="@dimen/px_100"
+        android:visibility="gone"
+        />
+    <com.app.whoot.ui.view.PassWordLayout
+        android:id="@+id/verif_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tipsinfo"
+        android:layout_marginTop="80px"
+        app:box_draw_type="line"
+        app:interval_width="10dp"
+        app:item_height="35dp"
+        app:item_width="60dp"
+        app:pass_inputed_type="text"
+        app:box_input_color="@color/main_tab_defaule"
+        app:input_line_color="@color/nh_percent"
+        app:box_no_input_color="@color/color_dd"
+        app:text_input_color="@color/text_color_black_v1"
+        app:draw_txt_size="24sp"
+        app:pass_leng="four" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verif_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新發送驗證碼（59秒)"
+            android:gravity="center"
+            android:paddingTop="@dimen/px_15"
+            android:layout_marginTop="@dimen/px_120"
+            android:layout_marginBottom="@dimen/px_20"
+            android:paddingBottom="@dimen/px_25"
+            android:textColor="@color/white"
+           />
+
+        </LinearLayout>
+</LinearLayout>

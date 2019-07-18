@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hen"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/result_a"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:src="@drawable/topnav_icon_white_back"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_60"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="@string/souxun"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_30"
+                android:visibility="gone"
+                android:background="@drawable/topnav_icon_search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_10"
+                android:background="@null"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/result_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topnav_icon_map"
+            android:visibility="invisible"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_70"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/px_250"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blank_searchnone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/sou_suo"/>
+    </LinearLayout>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px_20"
+
+        android:layout_height="match_parent"/>
+    <include layout="@layout/empty_view_no_network"
+        android:id="@+id/no_network_view"/>
+</LinearLayout>

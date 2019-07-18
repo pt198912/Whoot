@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/md_title"
+            android:textColor="@color/text_color_black_v1"
+            android:textSize="20.0sp"
+             />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/md_message"
+                android:textSize="14.0sp"
+                android:textColor="@color/gray"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="70dp"
+                android:paddingBottom="15dp"
+
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/gray" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="horizontal" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginRight="@dimen/px_40"
+                android:textColor="@color/text_color_black_v3"
+                android:background="@drawable/useex_shape"
+                android:textSize="15.0sp"
+                android:text="@string/md_sz" />
+
+            <!--<TextView
+                android:layout_width="1.0px"
+                android:layout_height="match_parent"
+                android:background="@color/gray"/>-->
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginRight="@dimen/px_40"
+
+                android:background="@drawable/boxc_shape"
+                android:textSize="15.0sp"
+                android:gravity="center"
+                android:text="@string/md_out" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

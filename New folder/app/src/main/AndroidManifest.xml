@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.whoot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.app.whoot.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name"
+        >
+        <!-- 初始化屏幕宽高大小基本配置来进行缩放适配-->
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDp6k8bz68jmhnfOSZuHwIWKZ9dwXZJ9wk" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5a65074f15898546835521947dd9e9e2656c3d0b" />
+
+        <!--======================================Service=========================-->
+        <!--Application 初始化-->
+        <service android:name="com.app.whoot.component.service.AppIntentService" />
+        <!--app更新-->
+        <service android:name="com.app.whoot.component.service.UpdateAppService" />
+
+        <service
+            android:name=".component.service.FetchAddressIntentService"
+            android:exported="false" />
+        <service android:name=".component.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".component.service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!--======================================Activity=========================-->
+
+        
+        <!--======================================Activity=========================-->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+
+            ></activity>
+
+        <!--引导页面-->
+        <activity
+            android:name="com.app.whoot.ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/welcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--登陆页面-->
+        <activity
+            android:name="com.app.whoot.ui.activity.login.LoginActivity"
+            android:label="登陆页面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--主页面   com.app.whoot.ui.activity.main.MainActivity  com.app.whoot.ui.activity.WelcomeActivity-->
+        <activity
+            android:name="com.app.whoot.ui.activity.main.MainActivity"
+            android:label="主页面"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+           >
+            <!--要想在别的App上能成功调起App，必须添加intent过滤器-->
+            <intent-filter>
+                <data android:scheme="schemedemo"
+                    android:host="ihongqiqu.com"
+                    android:pathPrefix="/test"
+                    />
+                <!--下面这几行也必须得设置-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <!--兑换记录-->
+        <activity
+            android:name=".ui.activity.ExchangeActivity"
+            android:label="兑换记录"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--过期优惠卷-->
+        <activity
+            android:name=".ui.activity.CouponActivity"
+            android:label="过期优惠卷"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--我的评论-->
+        <activity
+            android:name=".ui.activity.CommentActivity"
+            android:label="我的评论"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--设置-->
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:label="设置"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--引导页-->
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:label="引导页"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--搜索-->
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:label="搜索"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:label="关于"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.HelpActivity"
+            android:label="帮助"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ResultsActivity"
+            android:label="搜索结果"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:label="个人信息"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+
+        <activity
+            android:name=".ui.activity.LuchangeActivity"
+            android:label="语言设置"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.CardItemActivity"
+            android:label="门店详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.RecomActivity"
+            android:label="推荐商品"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.WriteActivity"
+            android:label="评论"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.DishesActivity"
+            android:label="产品详情"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SuccessActivity"
+            android:label="成功页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SuccessTweActivity"
+            android:label="成功页面II"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.FailureActivity"
+            android:label="失败页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LoginMeActivity"
+            android:label="登录页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ViewPagerActivity"
+            android:label="图片页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.main.TransActivity"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name=".ui.activity.MeCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.StoreViewActivity"
+            android:label="店铺评论页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ExchangGiftActivity"
+            android:label="过期礼包页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.GiftItemActivity"
+            android:label="礼包详情页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.RecordActivity"
+            android:label="礼包详情页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CoupDetaiActivity"
+            android:label="优惠券兑换详情页面(改版)"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CoponsActivity"
+            android:label="优惠卷兑换详情页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.GiftSuccessActivity"
+            android:label="礼包扫码成功页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:label="webview页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.ResultLoginActivity"
+            android:label="游客扫码登录页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.activity.SignActivity"
+            android:label="注册页面"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".ui.activity.ForgetActivity"
+            android:label="忘记密码页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.BuxActivity"
+            android:label="我的礼品列表页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.FavourActivity"
+            android:label="我的收藏页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.WriteEditActivity"
+            android:label="修改评论页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.WindowActivity"
+            android:label="全局处理token过期"
+            android:theme="@style/dialogActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.activity.SuccessTokenActivity"
+            android:label="兑换结果页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.activity.DescrtActivity"
+            android:label="兑换说明页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ui.activity.StoreDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ui.activity.MapsActivity"
+            android:label="地图页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.RegisterActivity"
+            android:label="注册页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.VerificationActivity"
+            android:label="验证码页面"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.SignMenActivity"
+            android:label="注册页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.SignEmailActivity"
+            android:label="注册邮箱页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ResetPaswActivity"
+            android:label="忘记手机号密码页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.SecurityActivity"
+            android:label="账号安全页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ChangeActivity"
+            android:label="更改密码页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.InViteActivity"
+            android:label="邀请有礼页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.RewardActivity"
+            android:label="邀請碼/優惠碼页面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!--7.0必须才能调用系统相机-->
+        <provider
+            android:authorities="com.app.whoot.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+
+    </application>
+
+</manifest>

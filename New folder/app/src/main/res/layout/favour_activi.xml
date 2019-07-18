@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_back" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/filter_pop"/>
+
+
+
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/favourview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/favour_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/px_250"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blank_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/items" />
+    </LinearLayout>
+    <include layout="@layout/empty_view_no_network"
+        android:id="@+id/no_network_view"
+        android:visibility="gone"/>
+</LinearLayout>

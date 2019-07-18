@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/coupon_exchange_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_44"
+        />
+    <include layout="@layout/empty_view_no_network"
+        android:id="@+id/no_network_view"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/coupon_exchange_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/px_250"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blank_expiredcoupon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/exchange_token"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@drawable/invitation_bg_meitu_1_meitu_5" >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_marginTop="@dimen/px_600"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center"
+                       android:layout_marginLeft="@dimen/dp_40"
+                       android:textColor="@color/white"
+                       android:text="@string/invite_men" />
+               <LinearLayout
+                   android:id="@+id/invite_ly"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:background="@drawable/invitation_help_bg">
+                   <ImageView
+                       android:id="@+id/invite_help"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="@dimen/px_10"
+                       android:layout_marginLeft="@dimen/px_20"
+                       android:layout_gravity="center"
+                       android:background="@drawable/invitation_icon_help" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:textColor="@color/white"
+                       android:layout_marginRight="@dimen/px_20"
+                       android:textStyle="bold"
+                       android:text="@string/help"/>
+               </LinearLayout>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_marginTop="@dimen/px_40"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/invite_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=""
+                       android:textColor="@color/invite_copy"
+                       android:textSize="20sp" />
+
+                   <ImageView
+                       android:id="@+id/invite_img"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/px_40"
+                       android:background="@drawable/invitation_icon_copy" />
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/invite_my"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="@dimen/px_40"
+                   android:background="@drawable/invitation_btn"
+                   android:gravity="center"
+                   android:paddingTop="@dimen/px_10"
+                   android:paddingBottom="@dimen/px_25"
+                   android:textStyle="bold"
+                   android:text="@string/invite_me"
+                   android:textColor="@color/white" />
+
+           </LinearLayout>
+
+
+
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@color/invite_bg"
+               android:clipChildren="false">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="30dp"
+                   android:orientation="vertical"
+                   android:clipChildren="false"
+                   android:background="@drawable/invitation_bg_white">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                        android:clipChildren="false"
+                       >
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"/>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:layout_weight="0.7"
+                           android:layout_marginTop="-5dp"
+                           android:background="@drawable/invitation_title_bg" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/white"
+                               android:text="@string/invite_yi" />
+                       </LinearLayout>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"/>
+
+                   </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="@dimen/dp_40"
+                      android:layout_marginTop="@dimen/px_40"
+                      android:orientation="horizontal">
+                      <LinearLayout
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:id="@+id/invite_men"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="25sp"
+                                  android:textStyle="bold"
+                                  android:text="10"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="@dimen/px_10"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:text="@string/invite_fren"/>
+                          </LinearLayout>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              android:textColor="@color/card_cc"
+                              android:text="@string/invite_refer"/>
+                      </LinearLayout>
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:id="@+id/invite_Diamond"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="25sp"
+                                  android:textStyle="bold"
+                                  android:text="10"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="@dimen/px_10"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:text="@string/invite_ge"/>
+                          </LinearLayout>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              android:textColor="@color/card_cc"
+                              android:text="@string/invite_diamond"/>
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:id="@+id/invite_Gold"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="25sp"
+                                  android:textStyle="bold"
+                                  android:text="10"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="@dimen/px_10"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:text="@string/invite_ge"/>
+                          </LinearLayout>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              android:textColor="@color/card_cc"
+                              android:text="@string/invite_gold"/>
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                              <TextView
+                                  android:id="@+id/invite_Silver"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="25sp"
+                                  android:textStyle="bold"
+                                  android:text="10"/>
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginLeft="@dimen/px_10"
+                                  android:textColor="@color/main_gold"
+                                  android:textSize="12sp"
+                                  android:textStyle="bold"
+                                  android:text="@string/invite_ge"/>
+                          </LinearLayout>
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textSize="12sp"
+                              android:textColor="@color/card_cc"
+                              android:text="@string/invite_silver"/>
+                      </LinearLayout>
+                  </LinearLayout>
+                   <TextView
+                       android:id="@+id/invite_token"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="@dimen/px_60"
+                       android:background="@drawable/use_shape"
+                       android:paddingLeft="@dimen/px_60"
+                       android:paddingTop="@dimen/px_20"
+                       android:paddingRight="@dimen/px_60"
+                       android:paddingBottom="@dimen/px_20"
+                       android:text="@string/invite_token"
+                       android:textColor="@color/title" />
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/invite_recyc"
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="@dimen/px_60"
+                       android:layout_marginBottom="@dimen/px_60"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+           </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/invite_bg"
+                android:clipChildren="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:clipChildren="false"
+                    android:background="@drawable/invitation_bg_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:clipChildren="false"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="-5dp"
+                            android:background="@drawable/invitation_title_bg" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="@string/invite_sh" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_50"
+                        android:layout_marginRight="@dimen/px_50"
+                        android:layout_marginTop="@dimen/px_40"
+                        android:textColor="@color/card_cc"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="@string/invite_co"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/px_50"
+                        android:layout_marginRight="@dimen/px_50"
+                        android:layout_marginTop="@dimen/px_40"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:textColor="@color/color_fc4c1a"
+                        android:text="@string/invite_notice"/>
+                    <ImageView
+                        android:id="@+id/invite_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/invitation_form_cn"
+                        android:layout_marginBottom="@dimen/px_40"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/invite_bg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/card_cc"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:text="@string/invite_reserver"
+                    android:layout_marginBottom="@dimen/px_30"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
